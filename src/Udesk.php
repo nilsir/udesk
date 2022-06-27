@@ -11,11 +11,7 @@ namespace Nilsir\Udesk;
 use Nilsir\Udesk\Responses\UdeskResponse;
 use Sammyjo20\Saloon\Http\SaloonConnector;
 use Sammyjo20\Saloon\Traits\Plugins\AcceptsJson;
-use Nilsir\Udesk\Requests\ExampleRequestCollection;
 
-/**
- * @method ExampleRequestCollection example
- */
 class Udesk extends SaloonConnector
 {
     use AcceptsJson;
@@ -25,7 +21,7 @@ class Udesk extends SaloonConnector
      *
      * @var string
      */
-    protected string $apiBaseUrl = ':base_url';
+    protected string $apiBaseUrl = '';
 
     /**
      * Custom response that all requests will return.
@@ -39,9 +35,7 @@ class Udesk extends SaloonConnector
      *
      * @var array
      */
-    protected array $requests = [
-        'example' => ExampleRequestCollection::class,
-    ];
+    protected array $requests = [];
 
     /**
      * Define the base URL of the API.

@@ -10,7 +10,7 @@ namespace Nilsir\Udesk\Data;
 
 use Spatie\DataTransferObject\DataTransferObject;
 
-class Example extends DataTransferObject
+class LoginData extends DataTransferObject
 {
-    //
+    //TODO: 用于验证数据
 }
