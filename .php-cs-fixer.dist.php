@@ -1,5 +1,11 @@
 <?php
 
+$header = <<<EOF
+This file is part of the nilsir/udesk.
+(c) nilsir <nilsir@qq.com>
+This source file is subject to the MIT license that is bundled.
+EOF;
+
 $finder = Symfony\Component\Finder\Finder::create()
     ->in([
         __DIR__,
@@ -16,6 +22,7 @@ $config = new PhpCsFixer\Config();
 
 return $config->setRules([
     '@PSR2' => true,
+    'header_comment' => ['header' => $header],
     'array_syntax' => ['syntax' => 'short'],
     'ordered_imports' => ['sort_algorithm' => 'length'],
     'no_unused_imports' => true,

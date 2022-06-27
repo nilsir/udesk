@@ -1,6 +1,12 @@
 <?php
 
-namespace VendorName\SDK\Auth;
+/*
+ * This file is part of the nilsir/udesk.
+ * (c) nilsir <nilsir@qq.com>
+ * This source file is subject to the MIT license that is bundled.
+ */
+
+namespace Nilsir\Udesk\Auth;
 
 use Sammyjo20\Saloon\Http\SaloonRequest;
 use Sammyjo20\Saloon\Interfaces\AuthenticatorInterface;

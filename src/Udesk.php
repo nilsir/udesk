@@ -1,16 +1,22 @@
 <?php
 
-namespace VendorName\SDK;
+/*
+ * This file is part of the nilsir/udesk.
+ * (c) nilsir <nilsir@qq.com>
+ * This source file is subject to the MIT license that is bundled.
+ */
 
-use VendorName\SDK\Responses\SDKResponse;
+namespace Nilsir\Udesk;
+
+use Nilsir\Udesk\Responses\UdeskResponse;
 use Sammyjo20\Saloon\Http\SaloonConnector;
 use Sammyjo20\Saloon\Traits\Plugins\AcceptsJson;
-use VendorName\SDK\Requests\ExampleRequestCollection;
+use Nilsir\Udesk\Requests\ExampleRequestCollection;
 
 /**
  * @method ExampleRequestCollection example
  */
-class SDK extends SaloonConnector
+class Udesk extends SaloonConnector
 {
     use AcceptsJson;
 
@@ -26,7 +32,7 @@ class SDK extends SaloonConnector
      *
      * @var string|null
      */
-    protected ?string $response = SDKResponse::class;
+    protected ?string $response = UdeskResponse::class;
 
     /**
      * The requests/services on the SDK.

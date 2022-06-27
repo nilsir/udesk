@@ -1,11 +1,17 @@
 <?php
 
-namespace VendorName\SDK\Responses;
+/*
+ * This file is part of the nilsir/udesk.
+ * (c) nilsir <nilsir@qq.com>
+ * This source file is subject to the MIT license that is bundled.
+ */
+
+namespace Nilsir\Udesk\Responses;
 
 use Sammyjo20\Saloon\Http\SaloonResponse;
-use VendorName\SDK\Exceptions\SDKRequestException;
+use Nilsir\Udesk\Exceptions\SDKRequestException;
 
-class SDKResponse extends SaloonResponse
+class UdeskResponse extends SaloonResponse
 {
     /**
      * Create an exception if a server or client error occurred.

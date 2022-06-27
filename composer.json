@@ -1,19 +1,19 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "nilsir/udesk",
+    "description": "A PHP SDK for Udesk",
     "type": "library",
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/nilsir/udesk",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "VendorName\\SDK\\": "src/",
-            "VendorName\\SDK\\Tests\\": "tests/"
+            "Nilsir\\Udesk\\": "src/",
+            "Nilsir\\Udesk\\Tests\\": "tests/"
         }
     },
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com"
+            "name": "nilsir",
+            "email": "nilsir@qq.com"
         }
     ],
     "minimum-stability": "stable",

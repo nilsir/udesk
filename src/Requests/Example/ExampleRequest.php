@@ -1,8 +1,14 @@
 <?php
 
-namespace VendorName\SDK\Requests\Example;
+/*
+ * This file is part of the nilsir/udesk.
+ * (c) nilsir <nilsir@qq.com>
+ * This source file is subject to the MIT license that is bundled.
+ */
 
-use VendorName\SDK\Requests\Request;
+namespace Nilsir\Udesk\Requests\Example;
+
+use Nilsir\Udesk\Requests\Request;
 use Sammyjo20\Saloon\Constants\Saloon;
 
 class ExampleRequest extends Request
