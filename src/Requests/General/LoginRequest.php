@@ -27,7 +27,7 @@ class LoginRequest extends Request
      */
     public function defineEndpoint(): string
     {
-        return 'log_in';
+        return '/log_in';
     }
 
     public function defaultData(): array
