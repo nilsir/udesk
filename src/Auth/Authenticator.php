@@ -13,13 +13,25 @@ use Sammyjo20\Saloon\Interfaces\AuthenticatorInterface;
 
 class Authenticator implements AuthenticatorInterface
 {
-    public function __construct()
-    {
-        // TODO: Implement __construct() method.
+    public function __construct(
+        protected string $openApiToken,
+        protected string $adminEmail,
+    ) {
     }
 
     public function set(SaloonRequest $request): void
     {
-        // TODO: Implement set() method.
+        $timestamp = time();
+        $nonce = uniqid();
+        $signVersion = 'v2';
+        $sign = sha1("{$this->adminEmail}&{$this->openApiToken}&{$timestamp}&$nonce&$signVersion");
+
+        $request->setQuery([
+            'email' => $this->adminEmail,
+            'timestamp' => $timestamp,
+            'sign' => $sign,
+            'nonce' => $nonce,
+            'sign_version' => $signVersion,
+        ]);
     }
 }

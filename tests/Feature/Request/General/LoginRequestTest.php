@@ -1,7 +1,13 @@
 <?php
 
-use Nilsir\Udesk\Requests\General\LoginRequest;
+/*
+ * This file is part of the nilsir/udesk.
+ * (c) nilsir <nilsir@qq.com>
+ * This source file is subject to the MIT license that is bundled.
+ */
+
 use Nilsir\Udesk\UdeskConnector;
+use Nilsir\Udesk\Requests\General\LoginRequest;
 
 test('test login request', function () {
     $connector = new UdeskConnector(get_api_host());
