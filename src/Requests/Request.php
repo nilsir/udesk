@@ -8,7 +8,7 @@
 
 namespace Nilsir\Udesk\Requests;
 
-use Nilsir\Udesk\Udesk;
+use Nilsir\Udesk\UdeskConnector;
 use Sammyjo20\Saloon\Http\SaloonRequest;
 
 class Request extends SaloonRequest
@@ -16,5 +16,5 @@ class Request extends SaloonRequest
     /**
      * @var string|null
      */
-    protected ?string $connector = Udesk::class;
+    protected ?string $connector = UdeskConnector::class;
 }

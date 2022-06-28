@@ -12,7 +12,7 @@ use Nilsir\Udesk\Responses\UdeskResponse;
 use Sammyjo20\Saloon\Http\SaloonConnector;
 use Sammyjo20\Saloon\Traits\Plugins\AcceptsJson;
 
-class Udesk extends SaloonConnector
+class UdeskConnector extends SaloonConnector
 {
     use AcceptsJson;
 

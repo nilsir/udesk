@@ -33,3 +33,17 @@ expect()->extend('toBeOne', function () {
 | global functions to help you to reduce the number of lines of code in your test files.
 |
 */
+function get_api_email(): string
+{
+    return 'admin@udesk.cn';
+}
+
+function get_api_password(): string
+{
+    return 'password';
+}
+
+function get_api_host(): string
+{
+    return 'https://demo.udesk.cn/';
+}
